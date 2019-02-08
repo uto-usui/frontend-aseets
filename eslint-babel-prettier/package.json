@@ -2,7 +2,8 @@
   "scripts": {
     "build": "NODE_ENV=production webpack",
     "watch": "NODE_ENV=development webpack --watch",
-    "lint:fix": "prettier-eslint --write ./src/**/*"
+    "lint:fix": "prettier-eslint --write ./src/**/*",
+    "lintcss": "stylelint --fix ./**/*.vue"
   },
   "dependencies": {
     "vue": "^2.5.16"
@@ -28,6 +29,12 @@
     "prettier": "^1.15.1",
     "prettier-eslint": "^8.8.2",
     "prettier-eslint-cli": "^4.7.1",
+    "prettier-stylelint": "^0.4.2",
+    "stylelint": "^9.10.1",
+    "stylelint-config-recess-order": "^2.0.1",
+    "stylelint-config-standard": "^18.2.0",
+    "stylelint-scss": "^3.5.3",
+    "stylelint-webpack-plugin": "^0.10.5",
     "vue-loader": "^15.2.4",
     "vue-template-compiler": "^2.5.16",
     "webpack": "^4.17.1",

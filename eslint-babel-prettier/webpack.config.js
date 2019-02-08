@@ -1,4 +1,5 @@
 const { VueLoaderPlugin } = require('vue-loader')
+const StylelintPlugin = require('stylelint-webpack-plugin')
 
 // mode
 // :production minify
@@ -53,5 +54,8 @@ module.exports = {
   plugins: [
     // Vueを読み込めるようにするため
     new VueLoaderPlugin(),
+    new StylelintPlugin({
+      files: ['**/*.vue'],
+    }),
   ],
 }
