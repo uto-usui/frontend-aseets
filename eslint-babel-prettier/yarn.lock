@@ -5844,6 +5844,15 @@ style-search@^0.1.0:
   resolved "https://registry.yarnpkg.com/style-search/-/style-search-0.1.0.tgz#7958c793e47e32e07d2b5cafe5c0bf8e12e77902"
   integrity sha1-eVjHk+R+MuB9K1yv5cC/jhLneQI=
 
+stylelint-config-good-scss@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/stylelint-config-good-scss/-/stylelint-config-good-scss-1.0.1.tgz#a6c9ebe269b999ccf906d3f0b87c64228c0682eb"
+  integrity sha512-RnpK6i6GlmVMTXixPhJyxGQVARG1GYbv28bPwPvhdhN9SiE4n7egmefxnDjbheAN9SkhmI1sEdg0OAyznnC3/w==
+  dependencies:
+    stylelint-config-recess-order "^2.0.1"
+    stylelint-config-standard "^18.2.0"
+    stylelint-scss "^3.5.3"
+
 stylelint-config-recess-order@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/stylelint-config-recess-order/-/stylelint-config-recess-order-2.0.1.tgz#749d4d07b77d81ac8a144ed1898a9108d6170879"
