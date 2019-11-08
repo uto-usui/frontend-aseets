@@ -22,3 +22,7 @@ find . -name "*.jpg" | while read file; do mv $file ${file/.jpg/_crop.jpg}; done
 cp *.jpg ../original/
 cd ../original/
 cp *.jpg ../src/
+
+rm *.jpg
+cd ../crop/
+rm *.jpg
