@@ -12,3 +12,4 @@ yarn-error.log*
 .vscode
 
 /compress-image/**/*.jpg
+/compress-image/**/*.png
