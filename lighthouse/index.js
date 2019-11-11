@@ -3,6 +3,9 @@
 // or
 // npm i -g pwmetrics
 // pwmetrics https://google.com
+//
+// without this script
+//   -> lighthouse https://google.com --quiet  --throttling.cpuSlowdownMultiplier=1 --throttling-method=provided
 
 const input = require('fs')
   .readFileSync('/dev/stdin')
