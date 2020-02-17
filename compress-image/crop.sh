@@ -1,18 +1,17 @@
 #!/bin/sh
 
+mkdir crop
+mkdir src
 
 # resize original images
 cd ./original
-sips --resampleWidth 1200  *.png
+sips --resampleWidth 1200 *.png
 
 # format from png to jpg
 mogrify -format jpg *.png
 rm *.png
 
 # crop original images
-cd ../
-mkdir crop
-cd ./original
 cp *.jpg ../crop/
 cd ../crop/
 mogrify -crop 1200x675+0+0 *.jpg
