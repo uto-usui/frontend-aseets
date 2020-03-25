@@ -1,7 +1,8 @@
 {
   "scripts": {
     "image": "node index.js",
-    "image:crop": "sh ./crop.sh && node index.js"
+    "image:crop": "sh ./crop.sh && node index.js",
+    "image:webp": "node index.js && sh ./webp.sh"
   },
   "devDependencies": {
     "imagemin": "^7.0.1",
