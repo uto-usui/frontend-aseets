@@ -5,12 +5,12 @@ const imageminGifsicle = require('imagemin-gifsicle');
 const imageminSvgo = require('imagemin-svgo');
 
 (async () => {
-  await imagemin(['src/**/*.{jpg,png,gif,svg}'], {
+  await imagemin(['src/**/*.{jpg,png,gif,svg,webp}'], {
     plugins: [
       imageminMozjpeg({ quality: 80 }),
-      imageminPngquant({ quality: [.65, .80], }),
+      imageminPngquant({ quality: [.65, .80] }),
       imageminGifsicle(),
-      imageminSvgo()
+      imageminSvgo(),
     ],
     replaceOutputDir: output => {
       return output.replace(/src\//, 'dist/')
