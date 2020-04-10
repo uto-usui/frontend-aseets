@@ -2,7 +2,8 @@
   "scripts": {
     "image:optimize": "node index.js",
     "image:crop": "sh ./crop.sh && node index.js",
-    "image:webp": "node index.js && sh ./webp.sh"
+    "image:webp": "node webp.js",
+    "image:webp-bath": "node index.js && sh ./webp.sh"
   },
   "devDependencies": {
     "imagemin": "^7.0.1",
@@ -10,6 +11,7 @@
     "imagemin-keep-folder": "^5.3.2",
     "imagemin-mozjpeg": "^8.0.0",
     "imagemin-pngquant": "^8.0.0",
-    "imagemin-svgo": "^7.1.0"
+    "imagemin-svgo": "^7.1.0",
+    "imagemin-webp": "^5.1.0"
   }
 }
