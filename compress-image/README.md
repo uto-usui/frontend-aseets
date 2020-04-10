@@ -14,7 +14,7 @@ yarn install
 
 Put your images in src folder.
 
-### Optimize images
+### 💎 Optimize images
 
 ```bath
 
@@ -22,7 +22,7 @@ yarn run image:optimize
 
 ```
 
-### Convert WebP images
+### ⚡️ Convert WebP images
 
 #### with Node.js
 
@@ -50,6 +50,6 @@ yarn run image:webp-bath
 
 ```
 
-## Thanks
+## 🙏🏻 Thanks
 
 - https://www.smashingmagazine.com/2018/07/converting-images-to-webp/
