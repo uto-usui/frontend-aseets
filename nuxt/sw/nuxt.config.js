@@ -27,9 +27,7 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [
-    '~/plugins/workbox-update.client.js',
-  ],
+  plugins: ['~/plugins/workbox-update.client.js'],
   /*
    ** Nuxt.js dev-modules
    */
@@ -57,7 +55,7 @@ export default {
       css: () => '[name].js',
       img: () => '[path][name].[ext]',
       font: () => '[path][name].[ext]',
-      video: () => '[path][name].[ext]',
+      video: () => '[path][name].[ext]'
     },
 
     /*
@@ -72,6 +70,6 @@ export default {
     skipWaiting: true,
     clientsClaim: true,
     // ios safari video support
-    cachingExtensions: '~/plugins/workbox-range-request.js',
-  },
+    cachingExtensions: '~/plugins/workbox-range-request.js'
+  }
 }

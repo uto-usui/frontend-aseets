@@ -1,5 +1,11 @@
+import { BroadcastChannel as BC } from 'broadcast-channel'
+
 // update page with my-cache
-const updatesChannel = new BroadcastChannel('my-cache')
-updatesChannel.addEventListener('message', (event) => {
-  window.location.reload()
-})
+const updatesChannel = window.BroadcastChannel
+  ? new BroadcastChannel('my-cache')
+  : new BC('my-cache')
+
+updatesChannel &&
+  updatesChannel.addEventListener('message', (_event) => {
+    window.location.reload()
+  })
