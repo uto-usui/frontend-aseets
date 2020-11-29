@@ -1,0 +1,16 @@
+{
+  "name": "node-scraping",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "nodemon -e js"
+  },
+  "dependencies": {
+    "jsdom": "16.4.0",
+    "node-fetch": "2.6.1"
+  },
+  "devDependencies": {
+    "nodemon": "2.0.6"
+  }
+}
