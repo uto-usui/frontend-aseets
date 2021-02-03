@@ -5,7 +5,10 @@
 // pwmetrics https://google.com
 //
 // without this script
-//   -> lighthouse https://google.com --quiet  --throttling.cpuSlowdownMultiplier=1 --throttling-method=provided
+//   -> lighthouse https://google.com --quiet --throttling.cpuSlowdownMultiplier=1 --throttling-method=provided
+// with basic auth
+// bash -c 'base64 <(echo -n '<username>:<password>')'
+// lighthouse https://google.com --extra-headers "{\"Authorization\":\"Basic xxxx\"}" --quiet --throttling.cpuSlowdownMultiplier=1 --throttling-method=provided
 
 const input = require('fs')
   .readFileSync('/dev/stdin')
