@@ -14,8 +14,6 @@ import HelloWorld from "@/components/HelloWorld.vue";
     />
 
     <div class="wrapper">
-      <p class="text-noteDarkenGreen">Hello Hello</p>
-
       <HelloWorld msg="You did it!" />
 
       <nav>
