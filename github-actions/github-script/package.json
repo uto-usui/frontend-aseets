@@ -1,0 +1,9 @@
+{
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "act": "act -s GITHUB_TOKEN=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 -P ubuntu-latest=ghcr.io/catthehacker/ubuntu:js-latest"
+  },
+  "devDependencies": {
+  }
+}

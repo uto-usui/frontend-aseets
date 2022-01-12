@@ -1,0 +1,20 @@
+name: echo-hello
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  convert_tokens:
+    name: Echo Hello
+    runs-on: ubuntu-latest
+    steps:
+
+      - uses: actions/github-script@v5
+        id: set-result
+        with:
+          script: return "🐈 Hello!!"
+          result-encoding: string
+
+      - name: Get result
+        run: echo "echo -- ${{steps.set-result.outputs.result}}"
